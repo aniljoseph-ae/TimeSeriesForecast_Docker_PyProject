@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: time-series-forecasting-tutorials
+Version: 0.1.0
+Summary: Time Series Forecasting Tutorials
+Author-email: Anil Joseph <aniljoseph.ae@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: hydra-core
+Requires-Dist: omegaconf
+Requires-Dist: pyyaml
+Requires-Dist: pydantic

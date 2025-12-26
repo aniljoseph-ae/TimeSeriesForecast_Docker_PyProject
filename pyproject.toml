@@ -1,0 +1,68 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "time-series-forecasting-tutorials"
+version = "0.1.0"
+description = "Time Series Forecasting Tutorials"
+readme = "README.md"
+authors = [
+    { name = "Anil Joseph", email = "aniljoseph.ae@gmail.com" }
+]
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "statsmodels",
+    "matplotlib",
+    "seaborn",
+    "hydra-core",
+    "omegaconf",
+    "pyyaml",
+    "pydantic",
+    "mplfinance",
+    "yfinance",
+]
+
+[project.optional-dependencies]
+
+classical = [
+    "catboost",
+    "prophet",
+    "pmdarima",
+]
+
+dl = [
+    "tensorflow==2.12.0",
+    "torch",
+    "pytorch-lightning",
+    "darts",
+]
+
+mlops = [
+    "mlflow",
+    "dvc",
+]
+
+notebooks = [
+    "ipykernel",
+    "jupyterlab"
+]
+
+
+[project.urls]
+# Homepage = "https://example.com"
+# Repository = "https://github.com/aniljoseph/time-series-forecasting-tutorials"
+# Documentation = "https://aniljoseph.github.io/time-series-forecasting-tutorials"
+# Issues = "https://github.com/aniljoseph/time-series-forecasting-tutorials/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

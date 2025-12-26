@@ -1,0 +1,21 @@
+# docker-compose.yml
+
+
+services:
+  classical:
+    build:
+      context: .
+      dockerfile: docker/classical.Dockerfile
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+
+  dl:
+    build:
+      context: .
+      dockerfile: docker/dl.Dockerfile
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true

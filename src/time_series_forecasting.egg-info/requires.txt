@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+statsmodels
+matplotlib
+seaborn
+hydra-core
+omegaconf
+pyyaml
+pydantic
