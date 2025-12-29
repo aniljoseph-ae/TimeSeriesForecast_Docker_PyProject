@@ -37,6 +37,11 @@ classical = [
     "pmdarima",
 ]
 
+ml = [
+    "xgboost",
+    "lightgbm"
+]
+
 dl = [
     "tensorflow==2.12.0",
     "torch",
